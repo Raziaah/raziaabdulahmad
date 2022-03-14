@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <form action='process.php' method='POST'>
+        <div>
+       <label>Firstname:</label><br>
+       <input type='text' placeholder='enter your firstname'>
+        </div>
+        <div>
+            <label>Middl name:</label><br>
+            <input type='test'  placeholder='enter your middlename'>
+        </div>
+        <div>
+            <label>Lastname:</label><br>
+            <input type='test'  placeholder='enter your lastname'>
+        </div>
+        <br>
+        <div>
+       <label>choose a course:</label>
+       <select name='course' id='course'>
+       <option value='html'>HTML</option>
+       <option value='java'>JAVA</option>
+       <option value='php'>PHP</option>
+       </select>
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type='email' placeholder='enter your email' style='padding: 12px;'>
+        </div>
+        <br>
+        <div>
+            <label for='phone'>PhoneNumber:</label>
+            <input type='tel' id='phone' name='phone' placeholder='enter your phonenumber' maxlength="15" style='padding: 12px;' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+        </div>
+        <br>
+        <div>
+            <label for='psw'>Password:</label>
+            <input type='password' id='psw' name='psw' maxlength="5" style='padding: 12px;' pattern='(?=./d)(?=.*[a-z])(?=.*[A-Z]).{5,}' title='Must containat at least two number  one symbol and at least five or more characters ' placeholder='enter your password' required>
+            <input type='reset'>
+        </div>
+        <br>
+        <div>
+            <label>Gender</label>
+            <select>
+                
+                <option>male</option>
+                <option>female</option>
+            </select>
+        </div>
+        <br>
+        <input type='submit' value='submit'>
+    </form>
+    <divstyle='mrgin_top:500px'></div>
+</body>
+</html>
